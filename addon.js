@@ -27,4 +27,4 @@ builder.defineStreamHandler(function(args) {
 })
 
 serveHTTP(builder.getInterface(), { port: process.env.PORT || 7000 })
-//publishToCentral("https://your-domain/manifest.json") // <- invoke this if you want to publish your addon and it's accessible publically on "your-domain"
+//publishToCentral("https://addon-stremio.vercel.app/manifest.json") // <- invoke this if you want to publish your addon and it's accessible publically on "your-domain"
