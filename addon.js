@@ -1,4 +1,4 @@
-const { addonBuilder, serveHTTP }  = require('stremio-addon-sdk')
+const { addonBuilder } = require("stremio-addon-sdk");
 const magnet = require("magnet-uri");
 
 const manifest = { 
@@ -102,4 +102,4 @@ builder.defineCatalogHandler(function(args, cb) {
     return Promise.resolve({ metas: metas })
 })
 
-serveHTTP(builder.getInterface(), { port: process.env.PORT || 7000 })
+module.exports = builder.getInterface()

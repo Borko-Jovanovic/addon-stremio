@@ -4,6 +4,6 @@
     { "src": "addon.js", "use": "@vercel/node" }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "/addon.js" }
+    { "src": "/(.*)", "dest": "/serverless.js" }
   ]
 }
