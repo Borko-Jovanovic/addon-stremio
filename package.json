@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "magnet-uri": "^7.0.7",
     "stremio-addon-sdk": "^1.6.10"
   }
 }
