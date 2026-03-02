@@ -1,5 +1,5 @@
 {
-  "name": "addon-stremio",
-  "version": "1.0.0",
-  "private": true
+  "dependencies": {
+    "stremio-addon-sdk": "^1.6.10"
+  }
 }
