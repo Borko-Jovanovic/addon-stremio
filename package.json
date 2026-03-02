@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/Stremio/addon-helloworld",
   "dependencies": {
+    "csv-parser": "^3.2.0",
     "magnet-uri": "^5.1.3",
     "stremio-addon-sdk": "^1.1.0"
   }
