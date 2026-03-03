@@ -38,7 +38,7 @@ const dataset = {
 const fs = require("fs");
 const csv = require("csv-parser");
 
-fs.createReadStream("links.csv")
+fs.createReadStream(path.join(__dirname, "links.csv"))
     .pipe(csv())
     .on("data", (row) => {
         const id = row.ID;
