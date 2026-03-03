@@ -38,7 +38,7 @@ const dataset = {
 const fs = require("fs");
 const csv = require("csv-parser");
 
-fs.createReadStream("https://github.com/Borko-Jovanovic/addon-stremio/blob/4f92ea9fe916b4860aced07d0948de3a9bba7f97/links.csv")
+fs.createReadStream("links.csv")
     .pipe(csv())
     .on("data", (row) => {
         const id = row.ID;
