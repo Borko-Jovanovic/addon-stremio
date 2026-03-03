@@ -1,4 +1,7 @@
+[functions]
+  directory = "netlify/functions"
+
 [[redirects]]
   from = "/*"
-  to = "/addon.js"
+  to = "/.netlify/functions/serverless"
   status = 200
