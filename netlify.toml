@@ -2,6 +2,6 @@
   command = ""   # nothing to build
   publish = "."  # serve files from root
 
-# optional: run addon.js before publishing
+# optional: run serverless.js before publishing
 [build.lifecycle]
-  preBuild = "node addon.js"
+  preBuild = "node serverless.js"
