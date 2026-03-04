@@ -4,4 +4,4 @@
   publish = "."
 
 [build.lifecycle]
-  preBuild = "node serverless.js"
+  preBuild = "node server.js"
