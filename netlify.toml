@@ -1,26 +1,7 @@
 [build]
-functions = "netlify/functions"
-publish = "."
+  command = ""   # nothing to build
+  publish = "."  # serve files from root
 
-[[redirects]]
-from = "/manifest.json"
-to = "/.netlify/functions/serverless"
-status = 200
-
-[[redirects]]
-from = "/catalog/*"
-to = "/.netlify/functions/serverless"
-status = 200
-
-[[redirects]]
-from = "/stream/*"
-to = "/.netlify/functions/serverless"
-status = 200
-
-[[redirects]]
-from = "/meta/*"
-to = "/.netlify/functions/serverless"
-status = 200
-
-[functions."serverless"]
-handler = "serverless.js"
+# optional: run addon.js before publishing
+[build.lifecycle]
+  preBuild = "node addon.js"
