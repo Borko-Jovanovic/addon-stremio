@@ -1,5 +1,5 @@
 [build]
-  command = ""   # nothing to build
+  command = "npm run build"   # nothing to build
   publish = "."  # serve files from root
 
 # optional: run serverless.js before publishing
