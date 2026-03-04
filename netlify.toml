@@ -1,7 +1,9 @@
 
-[build]
-  command = "npm run build"
-  publish = "."
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
 
-[build.lifecycle]
-  preBuild = "node server.js"
+[[redirects]]
+  from = "/run-addon"
+  to = "/.netlify/functions/serverless"
+  status = 200
