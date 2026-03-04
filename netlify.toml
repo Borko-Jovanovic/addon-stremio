@@ -1,7 +1,26 @@
-[functions]
-  directory = "netlify/functions"
+[build]
+functions = "netlify/functions"
+publish = "."
 
 [[redirects]]
-  from = "/*"
-  to = "/.netlify/functions/serverless"
-  status = 200
+from = "/manifest.json"
+to = "/.netlify/functions/serverless"
+status = 200
+
+[[redirects]]
+from = "/catalog/*"
+to = "/.netlify/functions/serverless"
+status = 200
+
+[[redirects]]
+from = "/stream/*"
+to = "/.netlify/functions/serverless"
+status = 200
+
+[[redirects]]
+from = "/meta/*"
+to = "/.netlify/functions/serverless"
+status = 200
+
+[functions."serverless"]
+handler = "serverless.js"
