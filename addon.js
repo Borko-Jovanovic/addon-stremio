@@ -19,6 +19,7 @@ const manifest = {
     // set catalogs, we'll be making 2 catalogs in this case, 1 for movies and 1 for series
     "catalogs": [
         {
+            name: "Sinhronizovani crtaći - Filmovi",            
             type: 'movie',
             id: 'Sinhronizovani crtaći - Filmovi'
         }
