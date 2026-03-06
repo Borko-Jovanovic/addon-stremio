@@ -1,9 +1,0 @@
-
-[functions]
-  directory = "netlify/functions"
-  node_bundler = "esbuild"
-
-[[redirects]]
-  from = "/run-addon"
-  to = "/.netlify/functions/serverless"
-  status = 200
